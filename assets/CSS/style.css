@@ -6,13 +6,19 @@
 :root {
     --bgcolor: #000;
     --decopri: #b28756;
-    --corfont: #fff;
+    --fbColor: #fff;
     --menusele: #D3D3D3;
-    --descColor: #ccc;
+    --descColorLigth: #a7a7a7;
+    --descColorDark: #979797;
     --bgDefLight: #f7f7f7;
     --titColorLight: #000;
     --bgDefDark: #000;
     --titColorDark: #fff;
+    --textService: #999;
+    --bgFiltroProj: #ebebeb;
+    --fgFiltroProj: #5f5f5f;
+    --linFiltroProj: #d3d3d3;
+    --destaMenu: #ccc
 }
 
 * {
@@ -28,13 +34,13 @@ body {
 header {
     height: 100px;
     background-color: var(--bgcolor);
-    color: var(--corfont);
+    color: var(--fbColor);
 }
 
 .buttom {
     display: inline-block;
     background-color: var(--decopri);
-    color: var(--corfont);
+    color: var(--fbColor);
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
@@ -67,7 +73,7 @@ header {
 
 .default .section-desc {
     font-size: 12px;
-    color: var(--descColor);
+    color: var(--descColorLigth);
     margin-top: 10px;
     margin-bottom: 40px; 
 }
@@ -88,6 +94,10 @@ header {
 
 .default.dark {
     background-color: var(--bgDefDark);
+}
+
+.default.dark .setion-desc {
+    color: var(--descColorDark);
 }
 
 .default.dark .section-title {
@@ -134,7 +144,7 @@ header {
 }
 
 .menu li a {
-    color: var(--corfont);
+    color: var(--fbColor);
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
@@ -187,7 +197,7 @@ header {
     height: 100%;
     justify-content: center;
     align-items: center;
-    color: var(--corfont);
+    color: var(--fbColor);
 }
 
 .banner h1 {
@@ -252,4 +262,132 @@ header {
 .section-aboutus--right img{
     width: 480px;
     box-shadow: 15px 15px 15px #aaa9a9;
+}
+
+/*
+    Section - Services
+*/
+
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border-right: 1px solid var(--textService);
+}
+
+.section-service:first-child {
+    border-left: 1px solid var(--textService);
+}
+
+.section-service h4 {
+    color: var(--textService);
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 45px;
+}
+
+.section-service p {
+    color: var(--textService);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/*
+    Sectios - Project
+*/
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects-filters {
+    border: 1px solid var(--linFiltroProj);
+    background-color: var(--bgFiltroProj);
+    border-radius:  30px;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.section-projects-filters ul,
+.section-projects-filters li {
+    list-style: none;
+}
+
+.section-projects-filters li {
+    display: inline-block;
+    color: var(--fgFiltroProj);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid var(--linFiltroProj);
+    border-bottom: 3px solid var(--bgFiltroProj);
+    cursor: pointer;
+}
+
+.section-projects-filters li:first-child {
+    border-left: 0px;
+} 
+
+.section-projects-filters li:hover,
+.section-projects-filters li.active {
+    border-bottom: 3px solid var(--decopri);
+}
+
+.section-projects-photos {
+    width: 100vw;
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects-photo {
+    width: 280px;
+}
+
+.section-projects-photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects-photoarea img {
+    width: inherit;
+    height: inherit;
+}
+
+.section-projects-photoinfo {
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--destaMenu);
+    flex-direction: column;
+}
+
+.section-projects-photoinfo h5 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.section-projects-photoinfo p {
+    font-size: 13px;
+    padding: 10px 40px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.section-projects-photoarea:hover .section-projects-photoinfo {
+    display: flex;
+    cursor: pointer;
 }
