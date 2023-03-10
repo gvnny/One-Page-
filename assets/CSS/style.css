@@ -391,3 +391,69 @@ header {
     display: flex;
     cursor: pointer;
 }
+
+/*
+    Section - our team
+*/
+
+
+.slider-ourTeam {
+    height: 100%;
+    background-image: url(../../Media/foto5.jpg);
+    background-color:  #131313;
+    height: calc(100vh - 100px);
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+
+.photo-slider-ourTeam {
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedia ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMedia li {
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+    background-color: var(--descColorLigth);
+}
+
+.title-slider-ourTeam {
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    text-transform: uppercase 
+}
+
+.title-slider-ourTeam h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--bgcolor);
+}
+
+.title-slider-ourTeam p{
+    font-size: 12px;
+    color: var(--descColorLigth);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.profile {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-description {
+    margin-bottom: 10px;
+}
