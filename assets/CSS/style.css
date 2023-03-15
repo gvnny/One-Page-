@@ -399,9 +399,9 @@ header {
 
 .slider-ourTeam {
     height: 100%;
-    background-image: url(../../Media/foto5.jpg);
+    background-image: url(../../Media/foto12.jpg);
     background-color:  #131313;
-    height: calc(100vh - 100px);
+    height: calc(77vh - 100px);
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
@@ -424,6 +424,19 @@ header {
     text-decoration: none;
     list-style: none;
     background-color: var(--descColorLigth);
+    border-radius: 100%;
+    margin: 3px;
+    width: 27px;
+    height: 27px;
+}
+
+.socialMedia li:hover {
+    background-color: var(--decopri);
+    color: var(--menusele);
+}
+
+.socialMedia .active {
+    background-color: var( --decopri);
 }
 
 .title-slider-ourTeam {
@@ -432,13 +445,14 @@ header {
     align-items: center;
     justify-content: center;
     display: grid;
-    text-transform: uppercase 
+    text-transform: uppercase;
+    margin-top: 50px;
 }
 
 .title-slider-ourTeam h3 {
     font-size: 22px;
     font-weight: 600;
-    color: var(--bgcolor);
+    color: var(--fbColor);
 }
 
 .title-slider-ourTeam p{
@@ -446,14 +460,51 @@ header {
     color: var(--descColorLigth);
     margin-top: 10px;
     margin-bottom: 40px;
+    font-weight: 600;
 }
 
 .profile {
     margin: 20px;
     padding: 20px;
     text-align: center;
+    background-color: white;
+    height: 380px;
+    width: 320px;
 }
 
 .photo-description {
     margin-bottom: 10px;
+}
+
+.photo-description h3 {
+    font-weight: 600;
+}
+
+.photo-description p {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--fgFiltroProj);
+}
+
+.sliders-ourTeam .pointer-slider-ourTeam {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliders-ourTeam .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--decopri);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.sliders-ourTeam .pointer.active {
+    background-color: var(--decopri);
 }
