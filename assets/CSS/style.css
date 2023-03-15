@@ -60,7 +60,7 @@ header {
     padding-bottom: 50px;
 }
 
-.default .section-title, 
+.default .section-title,
 .default .section-desc {
     text-align: center;
     text-transform: uppercase;
@@ -75,7 +75,7 @@ header {
     font-size: 12px;
     color: var(--descColorLigth);
     margin-top: 10px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 .default .section-body {
@@ -157,12 +157,13 @@ header {
 }
 
 .menu li a:hover {
-    border-bottom: 5px solid var( --decopri); /* hover é quando passa o mause em cima, e coloca uma borda em baixo*/
+    border-bottom: 5px solid var(--decopri);
+    /* hover é quando passa o mause em cima, e coloca uma borda em baixo*/
     color: var(--menusele);
 }
 
 .menu .active a {
-    border-bottom: 5px solid var( --decopri);
+    border-bottom: 5px solid var(--decopri);
 }
 
 .banner {
@@ -171,7 +172,8 @@ header {
     background-image: url(../Imagens/bg.jpg);
     background-size: cover;
     background-position: bottom;
-    overflow: hidden; /* o que estourar ele esconde */
+    overflow: hidden;
+    /* o que estourar ele esconde */
 }
 
 /*
@@ -187,7 +189,7 @@ header {
     width: calc(100vw + 4px);
     height: 100%;
     display: inline-block;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     margin-left: -4px;
 }
 
@@ -254,12 +256,13 @@ header {
     font-size: 14px;
     line-height: 25px;
 }
+
 .section-aboutus--right {
     width: 520px;
     text-align: center;
 }
 
-.section-aboutus--right img{
+.section-aboutus--right img {
     width: 480px;
     box-shadow: 15px 15px 15px #aaa9a9;
 }
@@ -310,7 +313,7 @@ header {
 .section-projects-filters {
     border: 1px solid var(--linFiltroProj);
     background-color: var(--bgFiltroProj);
-    border-radius:  30px;
+    border-radius: 30px;
     display: inline-block;
     padding: 0 20px;
 }
@@ -333,7 +336,7 @@ header {
 
 .section-projects-filters li:first-child {
     border-left: 0px;
-} 
+}
 
 .section-projects-filters li:hover,
 .section-projects-filters li.active {
@@ -365,7 +368,7 @@ header {
 
 .section-projects-photoinfo {
     position: absolute;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     width: inherit;
     height: inherit;
     display: none;
@@ -400,7 +403,7 @@ header {
 .slider-ourTeam {
     height: 100%;
     background-image: url(../../Media/foto12.jpg);
-    background-color:  #131313;
+    background-color: #131313;
     height: calc(77vh - 100px);
     background-size: cover;
     background-position: bottom;
@@ -436,7 +439,7 @@ header {
 }
 
 .socialMedia .active {
-    background-color: var( --decopri);
+    background-color: var(--decopri);
 }
 
 .title-slider-ourTeam {
@@ -455,7 +458,7 @@ header {
     color: var(--fbColor);
 }
 
-.title-slider-ourTeam p{
+.title-slider-ourTeam p {
     font-size: 12px;
     color: var(--descColorLigth);
     margin-top: 10px;
@@ -484,6 +487,9 @@ header {
     font-size: 12px;
     font-weight: 600;
     color: var(--fgFiltroProj);
+    align-items: center;
+    justify-content: center;
+    display: grid;
 }
 
 .sliders-ourTeam .pointer-slider-ourTeam {
@@ -507,4 +513,82 @@ header {
 
 .sliders-ourTeam .pointer.active {
     background-color: var(--decopri);
+}
+
+/*
+    section - happyClients
+*/
+
+.banner-happyClients {
+    background-color: var(--bgDefLight);
+}
+
+.title-happyClients {
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-top: 0px;
+}
+
+.title-happyClients h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--titColorLight);
+    margin-top: 45px;
+}
+
+.title-happyClients p {
+    font-size: 12px;
+    color: var(--descColorLigth);
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.photo-description-happyClients {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.photo-description-happyClients h3 {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    font-weight: 600;
+}
+
+.photo-description-happyClients p {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    font-weight: 600;
+}
+
+.text-happyClients {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.text-happyClients p {}
+
+.text-icon-quote {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin-bottom: 15px;
+}
+
+.profile-happyClients {
+    margin: 55px;
+    margin-top: 90px;
+    margin-bottom: 37px;
 }
