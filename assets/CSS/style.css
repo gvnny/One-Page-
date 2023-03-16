@@ -29,6 +29,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -521,6 +522,7 @@ header {
 
 .banner-happyClients {
     background-color: var(--bgDefLight);
+    height: 605px;
 }
 
 .title-happyClients {
@@ -578,7 +580,14 @@ header {
     display: grid;
 }
 
-.text-happyClients p {}
+.text-happyClients p {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--descColorLigth);
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
 
 .text-icon-quote {
     align-items: center;
@@ -591,4 +600,27 @@ header {
     margin: 55px;
     margin-top: 90px;
     margin-bottom: 37px;
+}
+
+.section-happyClients .pointer-happyClients {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-happyClients .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--decopri);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.section-happyClients .pointer.active {
+    background-color: var(--decopri);
 }
