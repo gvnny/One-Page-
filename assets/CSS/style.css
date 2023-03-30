@@ -801,3 +801,56 @@ header {
     justify-content: center;
     display: grid;
 }
+
+/*
+    Section - Some Facts 
+*/
+
+.someFacts-informations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.someFacts-fact {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    width: 240px;
+    margin-left: 60px;
+}
+
+.someFacts-fact h1{
+    color: var(--decopri);
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    font-size: 45px;
+}
+
+.someFacts-fact img{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.someFacts-fact h3{
+    color: var(--titColorDark);
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 18px;
+}
+
+.someFacts-fact p{
+    color: var(--descColorLigth);
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    text-align: center;
+}
